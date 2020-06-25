@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 20px auto;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.quadrato {
+  width: calc(100% / 6);
+  padding-bottom: 16%;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  position: relative;
+}
+.quadrato:nth-child(6n+6) {
+  border-right: 2px solid black;
+}
+.quadrato:nth-child(1n+31) {
+  border-bottom: 2px solid black;
+}
+.quadrato .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+.quadrato.yellow {
+  background-color: #fff87b;
+}
+.quadrato.green {
+  background-color: #00cc6a;
+}
