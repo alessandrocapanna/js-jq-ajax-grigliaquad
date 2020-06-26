@@ -5,8 +5,8 @@ $(document).ready(
     var source = $('#template').html();
     var template = Handlebars.compile(source);
 
-    var numeroTemplate = { number: 'clicca qui'};
-    var html = template(numeroTemplate);
+    var context = {};
+    var html = template(context);
 
     for (var i = 0; i < 36; i++) {
       $('.container').append(html);
