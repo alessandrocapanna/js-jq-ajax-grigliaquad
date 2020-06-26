@@ -39,20 +39,16 @@ $(document).ready(
                 // Se il numero è < o uguale a 5 il quadrato diventa giallo
                 if (numero <= 5) {
                   // resetto  classi
-                  quadratoCliccato.removeClass('yellow');
-                  quadratoCliccato.removeClass('green');
+                  quadratoCliccato.removeClass('yellow green');
 
                   // aggiungo classe
-                  quadratoCliccato.addClass('yellow');
-                  quadratoCliccato.addClass('cliccato');
+                  quadratoCliccato.addClass('yellow cliccato');
                 } else { //altrimenti diventa verde
                   // resetto  classi
-                  quadratoCliccato.removeClass('yellow');
-                  quadratoCliccato.removeClass('green');
+                  quadratoCliccato.removeClass('yellow green');
 
                   // Aggiungo classe
-                  quadratoCliccato.addClass('green');
-                  quadratoCliccato.addClass('cliccato');
+                  quadratoCliccato.addClass('green cliccato');                  
                 }
               },
               error:
